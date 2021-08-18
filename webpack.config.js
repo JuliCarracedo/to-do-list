@@ -11,6 +11,10 @@ module.exports = {
         template: './src/index.html'
      }),
    ],
+   devtool: 'inline-source-map',
+  devServer: {
+    contentBase: './dist',
+  },
     output: {
       filename: '[name].bundle.js',
       path: path.resolve(__dirname, 'dist'),
