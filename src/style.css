@@ -22,7 +22,7 @@ svg {
   background-color: rgba(0, 0, 0, 0);
 }
 
-.ordered{
+.ordered {
   background-color: #eee;
   order: 150;
 }
