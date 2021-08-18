@@ -2,72 +2,71 @@
 
 > One paragraph statement about the project.
 
-![screenshot](./app_screenshot.png)
+![screenshot](./lib/snapshot.PNG)
 
 Additional description about the project and its features.
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
-
-## Live Demo
-
-[Live Demo Link](https://livedemo.com)
-
+- JavaScript
+    - Webpack
+- HTML5
+- CSS3
+    - Vanilla
+    - Bootstrap
 
 ## Getting Started
-
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
-
 
 To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
+- NodeJS
+- VSCode
+
 ### Setup
+- Clone this repository anywhere you want with:
+
+```git clone https://github.com/JuliCarracedo/to-do-list.git```
+
+- Move to the cloned folder:
+
+```git cd to-do-list```
 
 ### Install
 
+- Run the following code lines one by one on your console, opened from this file:
+
+``` npm init -y```
+```npm install webpack webpack-cli --save-dev```
+```npm install --save-dev html-webpack-plugin```
+```npm install --save-dev webpack-dev-server```
+
+- Run the following to build the app.
+
+```npm run build```
+
+- Run the following to deploy it onto a local server.
+
+```npm start build```
 ### Usage
+ For the current version, you can only add elements to the list, but they are not persistan.The list will only keep the pre-built 5 tasks after reload.
 
-### Run tests
+## Author
 
-### Deployment
+👤 **Julian Carracedo**
 
-
-
-## Authors
-
-👤 **Author1**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@JuliCarracedo](https://github.com/JuliCarracedo)
+- Twitter: [@CarracedoTrigo](https://twitter.com/CarracedoTrigo)
+- LinkedIn: [Ju.ian Carracedo](https://linkedin.com/in/julian-carracedo)
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
-
 ## Show your support
 
 Give a ⭐️ if you like this project!
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
 
 ## 📝 License
 

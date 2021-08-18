@@ -1,7 +1,3 @@
-body {
-  background-color: bisque;
-}
-
 li {
   height: 10vh;
 }
@@ -24,4 +20,17 @@ svg {
 #add {
   border: none;
   background-color: rgba(0, 0, 0, 0);
+}
+
+.ordered{
+  background-color: #eee;
+  order: 150;
+}
+
+.clear-btn {
+  color: #333;
+}
+
+.clear-btn:hover {
+  color: #222;
 }
