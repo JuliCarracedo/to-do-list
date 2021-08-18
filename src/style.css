@@ -1,27 +1,27 @@
 body {
-    background-color: bisque;
+  background-color: bisque;
 }
 
 li {
-    height: 10vh;
+  height: 10vh;
 }
 
 svg {
-    height: 1em;
-    width: 1em;
+  height: 1em;
+  width: 1em;
 }
 
 .list-element {
-    border-top-color: black;
-    border-top-width: 1px;
-    border-top-style: solid;
+  border-top-color: black;
+  border-top-width: 1px;
+  border-top-style: solid;
 }
 
 #new-item {
-    width: 90%;
+  width: 90%;
 }
 
 #add {
-    border: none;
-    background-color: rgba(0, 0, 0, 0);
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
 }
