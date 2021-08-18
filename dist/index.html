@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>To Do List</title>
+<script defer src="index.bundle.js"></script></head>
+<body class="container-fluid d-flex h-100 align-content-center">
+
+        <ul id="list" class="list-unstyled w-50 mx-auto mt-5 container d-flex flex-column bg-light p-5">
+            <li class="d-flex justify-content-between align-content-center">
+                <p>Today's To Do</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M9 12l-4.463 4.969-4.537-4.969h3c0-4.97 4.03-9 9-9 2.395 0 4.565.942 6.179 2.468l-2.004 2.231c-1.081-1.05-2.553-1.699-4.175-1.699-3.309 0-6 2.691-6 6h3zm10.463-4.969l-4.463 4.969h3c0 3.309-2.691 6-6 6-1.623 0-3.094-.65-4.175-1.699l-2.004 2.231c1.613 1.526 3.784 2.468 6.179 2.468 4.97 0 9-4.03 9-9h3l-4.537-4.969z"/></svg>
+            </li>
+            <li class="d-flex justify-content-between align-content-center py-3">
+                <input type="text" id="new-item" placeholder="Add to your list...">
+                <button type="button" id="add">↵</button>
+            </li>
+            <li class="list-element d-flex justify-content-between align-content-center py-3">
+                <input type="checkbox" id="check">
+                <p>wash the dishes</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 18c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm0-9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm0-9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3z"/></svg>
+            </li>
+            <li class="list-element d-flex justify-content-between align-content-center py-3">
+                <input type="checkbox" id="check">
+                <p>complete To Do list project</p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 18c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm0-9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3zm0-9c1.657 0 3 1.343 3 3s-1.343 3-3 3-3-1.343-3-3 1.343-3 3-3z"/></svg>
+            </li>
+            <li class="ordered list-element d-flex justify-content-center align-content-center py-3">
+                <a class="text-center clear-btn">Clear all completed</a>
+            </li>
+        </ul>
+</body>
+</html>
