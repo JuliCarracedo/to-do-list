@@ -22,7 +22,7 @@ localStorage.setItem('list', JSON.stringify(tasks));
 
 const loadPredef = (arr) => {
   for (let i = 0; i < arr.length; i += 1) {
-    makeLi(arr[i].description, increaseCounter());
+    makeLi(arr[i].description, arr[i].completed, increaseCounter());
   }
   localStorage.setItem('list', JSON.stringify(tasks));
   const completeCheckBox = document.querySelectorAll("input[type='checkbox']");
@@ -37,19 +37,25 @@ loadPredef(tasks);
 
 addBtn.addEventListener('click', (event) => {
   event.preventDefault();
+
   let newIndex = increaseCounter();
   const description = document.getElementById('new-item').value;
+
   if (description === '' || description === ' ' || description == null) {return;}
   makeLi(description, newIndex);
+
   document.getElementById('new-item').value = '';
   let newTask = new Task(description, false, newIndex);
+
   tasks.push(newTask);
   localStorage.setItem('list', JSON.stringify(tasks));
+  location.reload();
 });
 
 
 const updateTask = (bool ,index) =>{
-  tasks[index].completed = bool;
+  tasks[index-1].completed = bool;
+  localStorage.setItem('list', JSON.stringify(tasks));
   let text = document.getElementById(`${index}-description`)
   if (bool){
     text.classList.add('overlined');
@@ -59,4 +65,4 @@ const updateTask = (bool ,index) =>{
   }
 }
 
- 
+console.log(tasks);
