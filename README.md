@@ -48,9 +48,9 @@ To get a local copy up and running follow these simple example steps.
 
 - Run the following to deploy it onto a local server.
 
-```npm start build```
+```npm start```
 ### Usage
- For the current version, you can only add elements to the list, but they are not persistan.The list will only keep the pre-built 5 tasks after reload.
+ For the current version, you can check your already done tasks, and their text gets edited with a line-through.
 
 ## Author
 
@@ -58,7 +58,7 @@ To get a local copy up and running follow these simple example steps.
 
 - GitHub: [@JuliCarracedo](https://github.com/JuliCarracedo)
 - Twitter: [@CarracedoTrigo](https://twitter.com/CarracedoTrigo)
-- LinkedIn: [Ju.ian Carracedo](https://linkedin.com/in/julian-carracedo)
+- LinkedIn: [Julian Carracedo](https://linkedin.com/in/julian-carracedo)
 
 ## 🤝 Contributing
 

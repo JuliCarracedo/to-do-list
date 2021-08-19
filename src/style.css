@@ -34,3 +34,7 @@ svg {
 .clear-btn:hover {
   color: #222;
 }
+
+.overlined {
+  text-decoration: line-through;
+}
