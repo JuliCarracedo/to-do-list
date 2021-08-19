@@ -48,7 +48,7 @@ To get a local copy up and running follow these simple example steps.
 
 - Run the following to deploy it onto a local server.
 
-```npm start build```
+```npm start```
 ### Usage
  For the current version, you can only add elements to the list, but they are not persistan.The list will only keep the pre-built 5 tasks after reload.
 

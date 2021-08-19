@@ -6,7 +6,9 @@ import Storage from './storage'
 const addBtn = document.getElementById('add');
 const list = document.getElementById('list');
 let taskCounter = 1;
-
+if (localStorage.getItem('list') == null){
+  taskCounter = 4;
+} 
 const increaseCounter = () => {
   const res = taskCounter;
   taskCounter += 1;
@@ -23,9 +25,15 @@ const loadPredef = (arr) => {
     makeLi(arr[i].description, increaseCounter());
   }
   localStorage.setItem('list', JSON.stringify(tasks));
+  const completeCheckBox = document.querySelectorAll("input[type='checkbox']");
+  completeCheckBox.forEach((box) => {
+  box.addEventListener('click', () => {
+    updateTask(box.checked, box.value);
+  })
+})
 };
 
-loadPredef(storage.list);
+loadPredef(tasks);
 
 addBtn.addEventListener('click', (event) => {
   event.preventDefault();
@@ -39,5 +47,16 @@ addBtn.addEventListener('click', (event) => {
   localStorage.setItem('list', JSON.stringify(tasks));
 });
 
+
+const updateTask = (bool ,index) =>{
+  tasks[index].completed = bool;
+  let text = document.getElementById(`${index}-description`)
+  if (bool){
+    text.classList.add('overlined');
+  }
+  else {
+    text.classList.remove('overlined');
+  }
+}
 
  
