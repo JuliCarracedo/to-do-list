@@ -38,8 +38,11 @@ To get a local copy up and running follow these simple example steps.
 - Run the following code lines one by one on your console, opened from this file:
 
 ``` npm init -y```
+
 ```npm install webpack webpack-cli --save-dev```
+
 ```npm install --save-dev html-webpack-plugin```
+
 ```npm install --save-dev webpack-dev-server```
 
 - Run the following to build the app.
@@ -50,7 +53,8 @@ To get a local copy up and running follow these simple example steps.
 
 ```npm start```
 ### Usage
- For the current version, you can check your already done tasks, and their text gets edited with a line-through.
+
+ For the current version, you can check your already done tasks, and their text gets edited with a line-through. Also you can add items to the list and the 'clear all completed' button disposes all completed tasks.
 
 ## Author
 

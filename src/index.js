@@ -6,7 +6,7 @@ import makeLi from './makeLi';
 import Storage from './storage';
 
 const addBtn = document.getElementById('add');
-
+const removeAll = document.getElementById('clear');
 let taskCounter = 1;
 if (localStorage.getItem('list') == null) {
   taskCounter = 4;
@@ -18,7 +18,7 @@ const increaseCounter = () => {
 };
 
 const storage = new Storage();
-const tasks = storage.getList();
+let tasks = storage.getList();
 
 localStorage.setItem('list', JSON.stringify(tasks));
 
@@ -55,12 +55,19 @@ addBtn.addEventListener('click', (event) => {
   const description = document.getElementById('new-item').value;
 
   if (description === '' || description === ' ' || description == null) { return; }
-  makeLi(description, newIndex);
+  makeLi(description, false, newIndex);
 
   document.getElementById('new-item').value = '';
   const newTask = new Task(description, false, newIndex);
 
   tasks.push(newTask);
+  localStorage.setItem('list', JSON.stringify(tasks));
+  location.reload();
+});
+
+removeAll.addEventListener('click', (event) => {
+  event.preventDefault();
+  tasks = tasks.filter((task) => task.completed === false);
   localStorage.setItem('list', JSON.stringify(tasks));
   location.reload();
 });
