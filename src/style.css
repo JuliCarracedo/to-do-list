@@ -1,0 +1,50 @@
+li {
+  height: 10vh;
+}
+
+svg {
+  height: 1em;
+  width: 1em;
+}
+
+.list-element {
+  border-top-color: black;
+  border-top-width: 1px;
+  border-top-style: solid;
+}
+
+#new-item {
+  width: 90%;
+}
+
+#add {
+  border: none;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.ordered {
+  background-color: #eee;
+  order: 150;
+}
+
+.clear-btn {
+  color: #333;
+}
+
+.clear-btn:hover {
+  color: #222;
+}
+
+.overlined {
+  text-decoration: line-through;
+}
+
+.dropdown-toggle::after {
+  content: none;
+}
+
+p {
+  height: 2em;
+  padding: 0;
+  margin: 0;
+}
