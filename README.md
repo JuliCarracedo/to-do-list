@@ -53,8 +53,8 @@ To get a local copy up and running follow these simple example steps.
 
 ```npm start```
 ### Usage
-
- For the current version, you can check your already done tasks, and their text gets edited with a line-through. Also you can add items to the list and the 'clear all completed' button disposes all completed tasks.
+You can check your already done tasks, and their text gets edited with a line-through. Also you can add items to the list and the 'clear all completed' button disposes all completed tasks. When using the options button, you get presented with the ability to edit an entry or even delete it.
+ 
 
 ## Author
 

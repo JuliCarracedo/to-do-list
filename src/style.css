@@ -38,3 +38,13 @@ svg {
 .overlined {
   text-decoration: line-through;
 }
+
+.dropdown-toggle::after {
+  content: none;
+}
+
+p {
+  height: 2em;
+  padding: 0;
+  margin: 0;
+}
