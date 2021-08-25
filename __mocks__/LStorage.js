@@ -1,0 +1,5 @@
+const localStorage = {
+  localStorage: {
+    list: [],
+  },
+};

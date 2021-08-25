@@ -4,6 +4,8 @@ import './style.css';
 import Task from './task';
 import makeLi from './makeLi';
 import Storage from './storage';
+import addTodo from './addTodo';
+import increaseCounter from './increaseCounter';
 
 const addBtn = document.getElementById('add');
 const removeAll = document.getElementById('clear');
@@ -11,17 +13,6 @@ const formField = document.getElementById('new-item');
 const storage = new Storage();
 let tasks = storage.getList();
 localStorage.setItem('list', JSON.stringify(tasks));
-
-let taskCounter = 1;
-if (localStorage.getItem('list') == null) {
-  taskCounter = 4;
-}
-
-const increaseCounter = () => {
-  const res = taskCounter;
-  taskCounter += 1;
-  return res;
-};
 
 const removerListener = (id) => {
   const index = id.slice(7).toString() - 1;
@@ -105,19 +96,20 @@ formField.addEventListener('keypress', (e) => {
 
 addBtn.addEventListener('click', (event) => {
   event.preventDefault();
+  addTodo();
 
-  const newIndex = increaseCounter();
-  const description = document.getElementById('new-item').value;
+  // const newIndex = increaseCounter();
+  // const description = document.getElementById('new-item').value;
 
-  if (description === '' || description === ' ' || description == null) { return; }
-  makeLi(description, false, newIndex);
+  // if (description === '' || description === ' ' || description == null) { return; }
+  // makeLi(description, false, newIndex);
 
-  document.getElementById('new-item').value = '';
-  const newTask = new Task(description, false, newIndex);
+  // document.getElementById('new-item').value = '';
+  // const newTask = new Task(description, false, newIndex);
 
-  tasks.push(newTask);
-  localStorage.setItem('list', JSON.stringify(tasks));
-  location.reload();
+  // tasks.push(newTask);
+  // localStorage.setItem('list', JSON.stringify(tasks));
+  // location.reload();
 });
 
 removeAll.addEventListener('click', (event) => {
